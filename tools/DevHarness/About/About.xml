@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <packageId>Xmaxer.DeathrestUnbound.DevHarness</packageId>
+  <name>Deathrest Unbound - Dev Harness (DO NOT PUBLISH)</name>
+  <author>Xmaxer</author>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <loadAfter>
+    <li>Xmaxer.DeathrestUnbound</li>
+    <li>vanillaracesexpanded.sanguophage</li>
+  </loadAfter>
+  <description>Automated in-game test scenarios and the interactive playground for Deathrest Unbound. Inert unless a harness request file exists.</description>
+</ModMetaData>

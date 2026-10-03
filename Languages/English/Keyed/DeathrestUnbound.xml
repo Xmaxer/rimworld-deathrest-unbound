@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Inspect strings -->
+  <DU_CasketLinks>Deathrest buildings: {0} in use, {1} enabled, {2} linked</DU_CasketLinks>
+  <DU_CasketPowerFormula>{0} x {1}^{2} = {3}</DU_CasketPowerFormula>
+  <DU_CasketPower>Casket power: {0}</DU_CasketPower>
+  <DU_CasketPowerProjected>Casket power while deathresting: {0}</DU_CasketPowerProjected>
+  <DU_CasketUnpowered>Casket unpowered: linked buildings are inactive.</DU_CasketUnpowered>
+  <DU_CasketNoLinks>No deathrest buildings linked. Build them in the same room as this casket and they link automatically.</DU_CasketNoLinks>
+  <DU_BuildingNoLinks>Not linked to any deathrest casket. Build it in the same room as a casket and it links automatically.</DU_BuildingNoLinks>
+  <DU_BuildingLinks>Linked caskets: {0} ({1} in use)</DU_BuildingLinks>
+  <DU_FuelLeft>{0} left at current use, serving {1} caskets</DU_FuelLeft>
+  <DU_BuildingPower>Power: {0} x {1} caskets = {2}</DU_BuildingPower>
+
+  <!-- Links tab -->
+  <DU_TabLinks>Deathrest</DU_TabLinks>
+  <DU_EnableAll>Enable all</DU_EnableAll>
+  <DU_DisableAll>Disable all</DU_DisableAll>
+  <DU_ColBuilding>Building</DU_ColBuilding>
+  <DU_ColCasket>Casket</DU_ColCasket>
+  <DU_ColOccupant>Deathresting</DU_ColOccupant>
+  <DU_ColStatus>Status</DU_ColStatus>
+  <DU_ColPresence>Presence</DU_ColPresence>
+  <DU_ColPower>Power</DU_ColPower>
+  <DU_ColPowerDelta>If toggled</DU_ColPowerDelta>
+  <DU_ToggleTip>Enable or disable this link. Disabled links never come back on by themselves.</DU_ToggleTip>
+  <DU_JumpTip>Click to select and jump to it.</DU_JumpTip>
+
+  <DU_Status_Active>In use</DU_Status_Active>
+  <DU_Status_Active_Desc>The pawn deathresting in this casket gets this building's effect.</DU_Status_Active_Desc>
+  <DU_Status_CasketUnpowered>Casket unpowered</DU_Status_CasketUnpowered>
+  <DU_Status_CasketUnpowered_Desc>The casket has no power, so none of its linked buildings work. A casket draws more power for every building it uses.</DU_Status_CasketUnpowered_Desc>
+  <DU_Status_Idle>Ready</DU_Status_Idle>
+  <DU_Status_Idle_Desc>Nobody is deathresting in this casket. The building will be used when someone does.</DU_Status_Idle_Desc>
+  <DU_Status_Disabled>Disabled</DU_Status_Disabled>
+  <DU_Status_Disabled_Desc>Switched off by you.</DU_Status_Disabled_Desc>
+  <DU_Status_Dormant>Out of reach</DU_Status_Dormant>
+  <DU_Status_Dormant_Desc>The building and casket are no longer in the same room, or have no line of sight. The link comes back when they do.</DU_Status_Dormant_Desc>
+  <DU_Status_OverCapacity>Over capacity</DU_Status_OverCapacity>
+  <DU_Status_OverCapacity_Desc>The deathrest capacity limit is enabled in the mod settings and this casket's pawn is at capacity. Earlier links take priority.</DU_Status_OverCapacity_Desc>
+  <DU_Status_OverStackLimit>Over stack limit</DU_Status_OverStackLimit>
+  <DU_Status_OverStackLimit_Desc>Stack limits are enabled in the mod settings and this casket already uses the maximum of this building type. Earlier links take priority.</DU_Status_OverStackLimit_Desc>
+
+  <!-- Settings -->
+  <DU_SettingsCapacity>Capacity</DU_SettingsCapacity>
+  <DU_SettingUncap>Unlimited deathrest capacity</DU_SettingUncap>
+  <DU_SettingUncapDesc>On: a casket uses every linked building. Off: each casket is limited by its pawn's vanilla deathrest capacity.</DU_SettingUncapDesc>
+  <DU_SettingStackLimits>Enforce per-building stack limits</DU_SettingStackLimits>
+  <DU_SettingStackLimitsDesc>Limits how many buildings of one type a single casket can use (vanilla: 4 glucosoid pumps, 4 psychofluid pumps, 2 accelerators).</DU_SettingStackLimitsDesc>
+  <DU_SettingStackLimitsHint>Per casket. 0 = unlimited.</DU_SettingStackLimitsHint>
+  <DU_SettingVanillaLimit>vanilla: {0}</DU_SettingVanillaLimit>
+  <DU_Unlimited>unlimited</DU_Unlimited>
+  <DU_SettingResetOne>Reset</DU_SettingResetOne>
+  <DU_SettingsPower>Power and fuel</DU_SettingsPower>
+  <DU_SettingCasketPower>Exponential casket power</DU_SettingCasketPower>
+  <DU_SettingCasketPowerDesc>While deathresting, a casket draws its base power x exponent^n, where n is the number of buildings it uses.</DU_SettingCasketPowerDesc>
+  <DU_SettingExponent>Exponent: {0}</DU_SettingExponent>
+  <DU_SettingExponentPreview>Casket draw by buildings used (100 W casket): {0}</DU_SettingExponentPreview>
+  <DU_SettingBuildingPower>Building power scales with caskets served</DU_SettingBuildingPower>
+  <DU_SettingBuildingPowerDesc>A building serving several deathresting pawns at once draws its power once per casket.</DU_SettingBuildingPowerDesc>
+  <DU_SettingFuel>Hemogen use scales with caskets served</DU_SettingFuel>
+  <DU_SettingFuelDesc>A fueled building serving several deathresting pawns at once burns hemogen once per casket.</DU_SettingFuelDesc>
+  <DU_SettingsSerum>Deathrest capacity serum</DU_SettingsSerum>
+  <DU_SettingHideSerum>Remove the serum from traders and loot (restart required)</DU_SettingHideSerum>
+  <DU_SettingHideSerumDesc>The serum stays in the game so saves load, and existing serum can still be used, but traders, quest rewards and loot no longer offer it.</DU_SettingHideSerumDesc>
+  <DU_SettingsReset>Reset all to defaults</DU_SettingsReset>
+</LanguageData>

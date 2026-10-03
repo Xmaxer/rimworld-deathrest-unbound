@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <packageId>Xmaxer.DeathrestUnbound</packageId>
+  <name>Deathrest Unbound</name>
+  <author>Xmaxer</author>
+  <modVersion>1.0.0</modVersion>
+  <url>https://github.com/Xmaxer/rimworld-deathrest-unbound</url>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2009463077</steamWorkshopUrl>
+      <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+    </li>
+    <li>
+      <packageId>Ludeon.RimWorld.Biotech</packageId>
+      <displayName>Biotech</displayName>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>brrainz.harmony</li>
+    <li>Ludeon.RimWorld.Biotech</li>
+  </loadAfter>
+  <description>Removes the deathrest building cap. Power is the limit instead.
+
+- No deathrest capacity: a deathresting pawn uses every deathrest building in the room, from any xenotype with the deathrest gene.
+- Exponential casket power: a deathrest casket draws base power x 1.5^n, where n is the number of buildings it uses. Eight buildings cost about 2.6 kW, twelve about 13 kW.
+- Shared buildings: deathrest buildings link to every casket in their room and can serve several deathresting pawns at once. Each casket served adds the building's power draw (and hemogen use) again.
+- Link management: a new "Deathrest" tab on caskets and deathrest buildings lets you switch individual links off, see what each one costs, and jump between them.
+- The deathrest capacity serum is no longer sold or found as loot (existing serum still works).
+
+Everything is configurable in the mod settings: capacity, per-building stack limits, the power exponent, building power and fuel scaling, and the serum.
+
+Works with modded deathrest buildings and caskets. Also supports Vanilla Races Expanded - Sanguophage.
+
+Safe to add to an existing save: existing bindings turn into casket links on load.
+
+Requires Harmony and Biotech.</description>
+</ModMetaData>

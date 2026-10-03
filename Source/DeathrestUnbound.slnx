@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="DeathrestUnbound.Core.Tests/DeathrestUnbound.Core.Tests.csproj" />
+  <Project Path="DeathrestUnbound.Core/DeathrestUnbound.Core.csproj" />
+  <Project Path="DeathrestUnbound.DevHarness/DeathrestUnbound.DevHarness.csproj" />
+  <Project Path="DeathrestUnbound/DeathrestUnbound.csproj" />
+</Solution>

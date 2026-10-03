@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <AssemblyName>DeathrestUnbound.DevHarness</AssemblyName>
+    <RootNamespace>DeathrestUnbound.DevHarness</RootNamespace>
+    <OutputPath>..\..\tools\DevHarness\1.6\Assemblies\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <GenerateDependencyFile>false</GenerateDependencyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.6.4871" PrivateAssets="all" />
+    <PackageReference Include="Lib.Harmony.Ref" Version="2.4.2" PrivateAssets="all" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DeathrestUnbound\DeathrestUnbound.csproj" Private="false" />
+  </ItemGroup>
+</Project>

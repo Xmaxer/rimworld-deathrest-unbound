@@ -1,0 +1,60 @@
+[img]https://raw.githubusercontent.com/Xmaxer/rimworld-deathrest-unbound/main/About/Preview.png[/img]
+
+[h1]Deathrest Unbound[/h1]
+
+Removes the deathrest building cap. Power is the limit instead.
+
+A deathresting pawn can use every deathrest building you give them, but each extra building makes their casket draw more power: [b]base x 1.5 per building[/b]. A few buildings are cheap. A dozen needs a power plant. Deathrest buildings can also serve several caskets at once, so one accelerator can speed up a whole room of sleeping sanguophages, as long as you can power it.
+
+[hr][/hr]
+
+[h2]What changes[/h2]
+
+[list]
+[*][b]No deathrest capacity.[/b] A pawn deathresting in a casket uses every deathrest building linked to it. This works for every xenotype with the deathrest gene, modded ones included.
+[*][b]Exponential casket power.[/b] While someone deathrests in it, a casket draws its base power x 1.5^n, where n is the number of buildings it uses. A vanilla casket draws about 760 W with 5 buildings, 2.6 kW with 8 and 13 kW with 12.
+[*][b]Shared buildings.[/b] Deathrest buildings link to every casket in their room. A building serving several deathresting pawns at once draws its power, and burns its hemogen, once per casket it serves.
+[*][b]No more serum.[/b] The deathrest capacity serum has nothing left to do, so traders, quest rewards and loot no longer offer it. Serum you already have still works.
+[/list]
+
+[hr][/hr]
+
+[h2]Managing links[/h2]
+
+Every casket and deathrest building gets a [b]Deathrest[/b] tab:
+
+[list]
+[*]A casket lists every building linked to it. A building lists every casket it can serve.
+[*]Switch any link on or off. Links you switch off stay off.
+[*]See each link's status (in use, ready, casket unpowered, out of reach), how long the building has been working for the current deathrest, and how much power it costs.
+[*]On a casket, see exactly how much total power would change if you toggled each link.
+[*]Click a name to jump to that building or casket.
+[/list]
+
+If a casket loses power, none of its buildings work and none of their bonuses apply, so plan your power plant before adding that tenth hemopump.
+
+[hr][/hr]
+
+[h2]Settings[/h2]
+
+Everything is configurable in the mod settings, and most changes apply immediately:
+
+[list]
+[*]Unlimited capacity, or the pawn's normal vanilla capacity per casket.
+[*]Per-building stack limits (off by default), with an editable limit for every deathrest building type, modded ones included.
+[*]The power exponent (1.0 to 3.0, default 1.5), or no exponential power at all.
+[*]Whether building power and hemogen use scale with the number of caskets served.
+[*]Whether to remove the serum from traders and loot (needs a restart).
+[/list]
+
+[hr][/hr]
+
+[h2]Compatibility[/h2]
+
+[list]
+[*]Requires [b]Biotech[/b] and [b]Harmony[/b].
+[*]Works with modded deathrest buildings and caskets.
+[*]Also supports Vanilla Races Expanded - Sanguophage.
+[*][b]Safe to add to an existing save.[/b] Buildings already bound to a pawn are converted to casket links when the save loads.
+[*]Safe to remove: buildings go back to binding the vanilla way. Saves keep loading with or without the serum setting.
+[/list]

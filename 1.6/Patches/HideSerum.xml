@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Removes the (now redundant) deathrest capacity serum from every source, when the hideSerum setting is on.
+     The def itself stays, so saves holding serum load cleanly. Each removal tolerates "nothing matched" so other
+     mods that already removed an entry don't cause errors. -->
+<Patch>
+  <Operation Class="DeathrestUnbound.PatchOperation_DeathrestUnboundSetting">
+    <setting>hideSerum</setting>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <!-- Trader stock (Outlander, orbital, Empire, and any mod using StockGenerator_SingleDef). -->
+        <li Class="PatchOperationRemove">
+          <success>Always</success>
+          <xpath>Defs/TraderKindDef/stockGenerators/li[thingDef="DeathrestCapacitySerum"]</xpath>
+        </li>
+        <!-- The Sanguophage quest reward option, whose only item is the serum: drop the whole option. -->
+        <li Class="PatchOperationRemove">
+          <success>Always</success>
+          <xpath>Defs/ThingSetMakerDef//li[thingSetMaker and count(.//thingDefs/li)=1 and .//thingDefs/li="DeathrestCapacitySerum"]</xpath>
+        </li>
+        <!-- Ancient crates and map-gen loot lists. -->
+        <li Class="PatchOperationRemove">
+          <success>Always</success>
+          <xpath>Defs/ThingSetMakerDef//thingDefs/li[text()="DeathrestCapacitySerum"]</xpath>
+        </li>
+        <!-- Generic reward generation by tag. -->
+        <li Class="PatchOperationRemove">
+          <success>Always</success>
+          <xpath>Defs/ThingDef[defName="DeathrestCapacitySerum"]/thingSetMakerTags</xpath>
+        </li>
+        <!-- Traders stocking by category won't carry it; the player can still sell old stock. -->
+        <li Class="PatchOperationConditional">
+          <success>Always</success>
+          <xpath>Defs/ThingDef[defName="DeathrestCapacitySerum"]/tradeability</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="DeathrestCapacitySerum"]/tradeability</xpath>
+            <value><tradeability>Sellable</tradeability></value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="DeathrestCapacitySerum"]</xpath>
+            <value><tradeability>Sellable</tradeability></value>
+          </nomatch>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

@@ -1,0 +1,24 @@
+# Local reference material and internal dev-process docs: never tracked.
+refs/
+docs/
+
+# Build output
+bin/
+obj/
+.vs/
+.idea/
+*.user
+*.suo
+1.6/Assemblies/
+tools/DevHarness/1.6/Assemblies/
+
+# Packaging and test profiles
+dist/
+tools/.smoke-profile/
+tools/.dev-profile/
+
+# Art generation: every draft iteration and local reference crops stay local;
+# only the finished images in About/ and workshop/gallery/ are tracked.
+tools/asset-pipeline/drafts/
+tools/asset-pipeline/refs/
+tools/asset-pipeline/__pycache__/

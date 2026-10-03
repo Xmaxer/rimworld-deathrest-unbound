@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <AssemblyName>DeathrestUnbound</AssemblyName>
+    <RootNamespace>DeathrestUnbound</RootNamespace>
+    <OutputPath>..\..\1.6\Assemblies\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <GenerateDependencyFile>false</GenerateDependencyFile>
+  </PropertyGroup>
+
+  <!-- The Unity-free core is compiled into this assembly; only one mod DLL ships. -->
+  <ItemGroup>
+    <Compile Include="..\DeathrestUnbound.Core\**\*.cs"
+             Exclude="..\DeathrestUnbound.Core\bin\**;..\DeathrestUnbound.Core\obj\**"
+             LinkBase="Core" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.6.4871" PrivateAssets="all" />
+    <PackageReference Include="Lib.Harmony.Ref" Version="2.4.2" PrivateAssets="all" />
+  </ItemGroup>
+</Project>
