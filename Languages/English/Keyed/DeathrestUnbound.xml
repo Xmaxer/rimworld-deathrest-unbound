@@ -23,7 +23,7 @@
   <DU_ColPresence>Presence</DU_ColPresence>
   <DU_ColPower>Power</DU_ColPower>
   <DU_ColPowerDelta>If toggled</DU_ColPowerDelta>
-  <DU_ToggleTip>Enable or disable this link. Disabled links never come back on by themselves.</DU_ToggleTip>
+  <DU_ToggleTip>Enable or disable this link.</DU_ToggleTip>
   <DU_JumpTip>Click to select and jump to it.</DU_JumpTip>
 
   <DU_Status_Active>In use</DU_Status_Active>

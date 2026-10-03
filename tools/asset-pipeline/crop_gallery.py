@@ -1,7 +1,7 @@
 """Crops Workshop gallery images out of the dev-harness screenshots.
 
 Refresh the screenshots first (RimWorld closed, Steam running):
-    make smoke SCENARIOS=ui,playground-check
+    make smoke-novre SCENARIOS=ui,playground-check
 then:
     python tools/asset-pipeline/crop_gallery.py
 Output: workshop/gallery/*.png (upload these as Workshop screenshots).

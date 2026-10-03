@@ -24,19 +24,19 @@
     <li>brrainz.harmony</li>
     <li>Ludeon.RimWorld.Biotech</li>
   </loadAfter>
-  <description>Removes the deathrest building cap. Power is the limit instead.
+  <description>Removes the deathrest building cap and uses power as the limit instead.
 
-- No deathrest capacity: a deathresting pawn uses every deathrest building in the room, from any xenotype with the deathrest gene.
-- Exponential casket power: a deathrest casket draws base power x 1.5^n, where n is the number of buildings it uses. Eight buildings cost about 2.6 kW, twelve about 13 kW.
-- Shared buildings: deathrest buildings link to every casket in their room and can serve several deathresting pawns at once. Each casket served adds the building's power draw (and hemogen use) again.
-- Link management: a new "Deathrest" tab on caskets and deathrest buildings lets you switch individual links off, see what each one costs, and jump between them.
-- The deathrest capacity serum is no longer sold or found as loot (existing serum still works).
+- A deathresting pawn uses every deathrest building in the room. This works for every xenotype with the deathrest gene.
+- While someone deathrests in it, a casket draws its base power x 1.5^n, where n is the number of buildings it uses. Eight buildings cost about 2.6 kW and twelve about 13 kW.
+- Deathrest buildings link to every casket in their room and can serve several deathresting pawns at once. A building draws its power and burns its hemogen once per casket it serves.
+- A new "Deathrest" tab on caskets and deathrest buildings lets you switch links off, shows what each one costs, and jumps between them.
+- Traders and loot no longer offer the deathrest capacity serum. Serum you already have still works.
 
-Everything is configurable in the mod settings: capacity, per-building stack limits, the power exponent, building power and fuel scaling, and the serum.
+You can configure capacity, per-building stack limits, the power exponent, building power and fuel scaling, and the serum in the mod settings.
 
 Works with modded deathrest buildings and caskets. Also supports Vanilla Races Expanded - Sanguophage.
 
-Safe to add to an existing save: existing bindings turn into casket links on load.
+Safe to add to an existing save. Buildings already bound to a pawn become casket links when the save loads.
 
 Requires Harmony and Biotech.</description>
 </ModMetaData>
