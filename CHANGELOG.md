@@ -1,6 +1,9 @@
 # Changelog
 
-## [1.0.0] - unreleased
+## [1.0.1] - 2026-10-04
+- Fixed: turning exponential casket power (or stack limits) off and back on emptied the settings page.
+
+## [1.0.0] - 2026-10-03
 - A casket uses every deathrest building linked to it. There is no deathrest capacity.
 - A deathresting casket draws base power x 1.5^n, where n is the number of buildings it uses. The exponent is a setting.
 - Deathrest buildings link to every casket in their room and can serve several deathresting pawns at once. Their

@@ -25,6 +25,8 @@ public sealed class HarnessRunner : GameComponent
             ["unpowered"] = () => new Scenarios.CasketUnpoweredScenario(),
             ["migration"] = () => new Scenarios.MigrationScenario(),
             ["serum"] = () => new Scenarios.SerumScenario(),
+            ["settings"] = () => new Scenarios.SettingsScenario(),
+            ["settingsui"] = () => new Scenarios.SettingsUiScenario(),
             ["ui"] = () => new Scenarios.UiScenario(),
             ["vre"] = () => new Scenarios.VreScenario(),
             ["perf"] = () => new Scenarios.PerfScenario(),
@@ -38,7 +40,7 @@ public sealed class HarnessRunner : GameComponent
     /// game, so it must be last: the reloaded game only runs its verification half.
     /// </summary>
     private static readonly string[] All =
-        { "boot", "serum", "uncap", "shared", "bonuses", "devwake", "limits", "rooms", "unpowered", "migration", "ui", "vre", "perf", "playground-check", "saveload" };
+        { "boot", "serum", "uncap", "shared", "bonuses", "devwake", "limits", "rooms", "unpowered", "migration", "settings", "settingsui", "ui", "vre", "perf", "playground-check", "saveload" };
 
     private readonly List<HarnessScenario> queue = new List<HarnessScenario>();
     private readonly List<string> failures = new List<string>();

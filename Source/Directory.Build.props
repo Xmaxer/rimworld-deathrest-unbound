@@ -6,7 +6,7 @@
     <Deterministic>true</Deterministic>
     <DebugType>embedded</DebugType>
     <PathMap>$(MSBuildThisFileDirectory)=/_/DeathrestUnbound/</PathMap>
-    <ModVersion>1.0.0</ModVersion>
+    <ModVersion>1.0.1</ModVersion>
     <Version>$(ModVersion)</Version>
   </PropertyGroup>
 </Project>

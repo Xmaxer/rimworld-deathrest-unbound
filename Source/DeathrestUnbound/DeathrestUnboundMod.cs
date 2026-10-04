@@ -43,7 +43,10 @@ public class DeathrestUnboundMod : Mod
         DeathrestUnboundSettings s = Settings;
         Rect view = new Rect(0f, 0f, inRect.width - 16f, viewHeight);
         Widgets.BeginScrollView(inRect, ref scroll, view);
-        Listing_Standard l = new Listing_Standard();
+        // viewHeight is last frame's height, so a row shown this frame overflows it. Without maxOneColumn the
+        // listing wraps the overflow into an off-screen column and CurHeight measures only that column, shrinking
+        // the page further every frame.
+        Listing_Standard l = new Listing_Standard { maxOneColumn = true };
         l.Begin(view);
 
         Heading(l, "DU_SettingsCapacity".Translate());
