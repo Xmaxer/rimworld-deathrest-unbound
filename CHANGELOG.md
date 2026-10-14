@@ -1,5 +1,8 @@
 # Changelog
 
+## [1.0.2] - 2026-10-14
+- Added RimWorld 1.7 to the supported versions.
+
 ## [1.0.1] - 2026-10-04
 - Fixed: turning exponential casket power (or stack limits) off and back on emptied the settings page.
 

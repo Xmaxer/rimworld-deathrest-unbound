@@ -3,10 +3,11 @@
   <packageId>Xmaxer.DeathrestUnbound</packageId>
   <name>Deathrest Unbound</name>
   <author>Xmaxer</author>
-  <modVersion>1.0.1</modVersion>
+  <modVersion>1.0.2</modVersion>
   <url>https://github.com/Xmaxer/rimworld-deathrest-unbound</url>
   <supportedVersions>
     <li>1.6</li>
+    <li>1.7</li>
   </supportedVersions>
   <modDependencies>
     <li>
